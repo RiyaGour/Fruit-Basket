@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery store - Fruit Basket</title>
+    <link rel="icon"  type="image/icon" href="image/icon.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <!--code for font awesome cdn--->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--code for font awesome cdn--->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  
+  </head>
+  <body>
+    <!--header section-->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Fruit-Basket</a
+      >
+      <nav class="navbar">
+        <a href="home/home.html">Home</a>
+        <a href="Features">Features</a>
+        <a href="#Products">Products</a>
+        <a href="#Categories">Categories</a>
+        <a href="#Review">Review</a>
+        <a href="#Blogs">Blogs</a>
+      </nav>
+
+<div class="icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div class="fa fa-shopping-cart" id="cart-btn"></div>
+    <div class="fa fa-user" id="login-btn"></div>
+</div>
+
+<form class="search-form">
+    <input type="serach" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fa fa-search"></label>
+</form>
+
+<div class="shopping-cart">
+    <div class="box">
+      <i class="fa fa-trash"></i>
+        <img src="image/kiwi.webp"  style="height: 40px; width: 100px;" alt="">
+        <div class="content">
+            <h3>Kiwi</h3>
+            <span class="price">$10.99/- </span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+
+     <div class="box">
+      <i class="fa fa-trash"></i>
+        <img src="image/2.jpeg" style="height: 40px; width: 100px;" alt="">
+        <div class="content">
+            <h3>Avagado</h3>
+            <span class="price">$20.00/- </span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+
+     <div class="box">
+      <i class="fa fa-trash"></i>
+        <img src="image/3.avif" style="height: 40px; width: 100px;" alt="">
+        <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">$5.99/- </span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+
+     <div class="box">
+      <i class="fa fa-trash"></i>
+        <img src="image/4.webp" style="height: 40px; width: 100px;" alt="">
+        <div class="content">
+            <h3>Muskmelon</h3>
+            <span class="price">$8.50/- </span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+
+    <div class="total">Total : $45.48/- </div>
+    <a href="#" class="btn">Checkout</a>
+
+
+  </div>
+
+  <form action="#" class="login-form">
+    <h3>Login now</h3>
+    <input type="email" placeholder="Your email" class="box">
+    <input type="password" placeholder="Your password" class="box">
+    <p>Forget your password <a href="#">Click here</a></p>
+    <p>Don't have an account <a href="#">Create Now</a></p>
+    
+    
+    <input type="button" value="Login Now" class="btn">
+  </form>
+    </header>
+    <!--header section-->
+
+    <!--home or banner section-->
+    <section class="home" id="home">
+       <div class="content">
+        <h3>Fresh and <span>Organic</span> Products For You</h3>
+        <p>"Fresh and quality fruits delivered to your doorstep! Shop from a wide variety of farm-fresh fruits, place your order online, and enjoy hassle-free delivery. 
+          Stay healthy with our handpicked, organic, and seasonal fruits. Order now for freshness guaranteed </p>
+          <a href="#" class="btn">Shop Now</a>
+       </div>
+      </section>
+    <!--home or banner section-->
+
+    <!--our features section-->
+    <section class="features" id="features">
+   <h1 class="heading"> Our <span> Features </span></h1>
+
+   <div class="box-container">
+    <div class="box">
+      <img src="image/f-img1.avif"  alt="fruits">
+      <h3>Fresh and Organic</h3>
+      <p>Our fruits are 100% organic, freshly harvested, and free from harmful chemicals. Grown naturally,
+         they are rich in nutrients, delicious, and sustainably sourced to ensure the best quality for your health.</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+
+    <div class="box">
+      <img src="image/f-img2.webp"  alt="delivery boy">
+      <h3>Free Delivery</h3>
+      <p>We offer easy and secure payment options for a hassle-free shopping experience. 
+        Choose from multiple payment methods and enjoy a smooth, quick, and safe checkout process every time you order.</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+    <div class="box">
+      <img src="image/f-img3.jpg"    alt="cod">
+      <h3>Easy Payments</h3>
+      <p>Enjoy free delivery on all our fresh, organic fruits! We ensure fast, hassle-free
+         shipping so you can enjoy farm-fresh goodness at your doorstep—convenient, reliable, and always at no extra cost.</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+
+   </div>
+    </section>
+    <!--our features section-->
+
+    <!--our Products section-->
+    <section class="products" id="products">
+    <h1 class="heading">Our <span>Products</span></h1>
+    <div class="swiper product-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <img src="image/pro1.jpg" alt="">
+          <h1>Fresh Mango</h1>
+          <div class="price">$5.10 - $15.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro2.jpeg" alt="">
+          <h1>Fresh Guava</h1>
+          <div class="price">$10.10 - $25.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro3.jpg" alt="">
+          <h1>Fresh Orange</h1>
+          <div class="price">$13.10 - $35.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+
+        <div class="swiper-slide box">
+          <img src="image/pro4.jpg" alt="">
+          <h1>Fresh Kiwi</h1>
+          <div class="price">$3.10 - $12.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro5.avif" alt="">
+          <h1>Fresh Pineapple</h1>
+          <div class="price">$7.50 - $15.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="swiper product-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <img src="image/pro6.avif" alt="">
+          <h1>Fresh Apple</h1>
+          <div class="price">$15.10 - $35.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro7.avif" alt="">
+          <h1>Fresh Grapes</h1>
+          <div class="price">$10.10 - $25.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro8.webp" alt="">
+          <h1>Fresh Dragon Fruit</h1>
+          <div class="price">$25.10 - $55.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+
+        <div class="swiper-slide box">
+          <img src="image/pro9.avif" alt="">
+          <h1>Fresh Strawberry</h1>
+          <div class="price">$20.10 - $45.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="image/pro10.avif" alt="">
+          <h1>Fresh Watermelon</h1>
+          <div class="price">$7.50 - $15.00/- </div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+      </div>
+    </div>
+
+        
+        
+   </section>
+    <!--our Products section-->
+
+    <!--product categories section-->
+    <section class="categories" id="categories">
+      <h1 class="heading">Product <span>Categories</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/cat-img1.jpg" alt="">
+          <h3>Fresh Fruits</h3>
+          <p>Upto 49% off</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-img2.avif" alt="">
+          <h3>Dry Fruits</h3>
+          <p>Upto 18% off</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-img3.avif" alt="">
+          <h3>Exotic Fruits</h3>
+          <p>Upto 10% off</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-img4.avif" alt="">
+          <h3>Juicing and Smoothie Fruits</h3>
+          <p>Upto 27% off</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    <!--product categories section-->
+
+    <!--customer's review section-->
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+
+      <div class=" swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/re-1.jpeg" alt="">
+            <p> "The fruits were incredibly fresh and juicy! Loved the fast delivery and organic quality. 
+              Will definitely order again! Highly recommend!"</p>
+               <h3>Emily R.</h3>
+               <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+          </div>
+
+        
+            <div class="swiper-slide box">
+              <img src="image/re-2.jpeg" alt="">
+              <p> "Best organic fruits I’ve ever had! The taste is amazing, and I love that they are pesticide-free. Highly recommend!"</p>
+                 <h3> Jason M.</h3>
+                 <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            
+              <div class="swiper-slide box">
+                <img src="image/re-3.jpeg" alt="">
+                <p>"Superb quality and great service! The fruits arrived perfectly ripe and tasted delicious. Free delivery is a huge plus!"</p>
+                   <h3>Sarah L</h3>
+                   <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                  </div>
+              </div>
+
+             
+                <div class="swiper-slide box">
+                  <img src="image/re-4.jpg" alt="">
+                  <p> "Absolutely fantastic! The freshness, flavor, and quick delivery make this my go-to fruit store. A truly great experience!"</p>
+                     <h3>Daniel K. </h3>
+                     <div class="stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                </div>
+      
+
+
+        </div>
+      </div>
+
+    </section>
+    <!--customer's review section-->
+
+    <!--blog section-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Our <span>Blogs</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+         <img src="image/blog1.avif" alt="">
+          <div class="content">
+            <div class="icons">
+                  <a href="#"><i class="fa fa-user"></i> By user</a>
+                  <a href="#"><i class="fa fa-calender"></i>Jan 19, 2025</a>
+            </div>
+            <h3>Health and Nutrition</h3>
+            <p>Our fresh, organic fruits are packed with essential vitamins, minerals, 
+              and antioxidants, promoting better health, boosting immunity, and supporting a nutritious, balanced lifestyle naturally</p>
+          <a href="#" class="btn"> Read more</a>
+          </div>
+        </div>
+
+      
+          <div class="box">
+            <img src="image/blog2.avif" alt="">
+            <div class="content">
+              <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By user</a>
+                    <a href="#"><i class="fa fa-calender"></i>Feb 2, 2025</a>
+              </div>
+              <h3>Farming and Cultivation</h3>
+              <p>Our fruits are grown using sustainable farming practices, ensuring natural cultivation, rich soil
+                 health, and chemical-free produce for the freshest, healthiest, and most environmentally friendly harvest possible.</p>
+            <a href="#" class="btn"> Read more</a>
+            </div>
+          </div>
+
+        
+            <div class="box">
+              <img src="image/blog3.avif" alt="">
+              <div class="content">
+                <div class="icons">
+                      <a href="#"><i class="fa fa-user"></i> By user</a>
+                      <a href="#"><i class="fa fa-calender"></i>Feb 13, 2025</a>
+                </div>
+                <h3>Fun and Interesting facts</h3>
+                <p>Did you know apples float because they are 25% air? Bananas are berries, but strawberries aren’t! 
+                  Enjoy fun, fascinating fruit facts while savoring nature’s sweetest treats!</p>
+              <a href="#" class="btn"> Read more</a>
+              </div>
+            </div>
+
+
+
+        
+      </div>
+    </section>
+    <!--blog section-->
+
+    <!--footer section-->
+    <section class="footer">
+      <div class="box-container">
+
+        <div class="box">
+          <h3>Fruit-Basket<i class="fa fa-shopping-basket"></i></h3>
+          <p>Feel free to Follow Us on Our Social Media Handlers All The Links are given below </p>
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram "></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <h3>Contact Info</h3>
+           <a href="#" class="links"><i class="fa fa-phone"></i> +91 9889343423</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9889343423</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> gour12@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> Gorakhpur</a>
+           </div>
+
+           
+        <div class="box">
+          <h3>Quick Links</h3>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Review</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i> Blogs</a>
+          </div>
+
+          <div class="box">
+            <h3>Newsletters</h3>
+            <p>Suscribe For Latest Updates</p>
+            <input type="email" class="email" placeholder="Your Email">
+            <input type="Submit" value="Suscribe" class="btn" >
+          </div>
+  
+</div>
+
+<div class="credit">Created by <span>Riya</span>   &#x1F49A; ||   All Rights Reversed</div>
+    </section>
+    <!--footer section-->
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
